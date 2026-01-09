@@ -1,6 +1,11 @@
 # Build stage
 FROM oven/bun:1 AS builder
 
+# OCI Labels for GHCR linking
+LABEL org.opencontainers.image.source="https://github.com/roxi3906/intro"
+LABEL org.opencontainers.image.description="Roxi Introduction Website"
+LABEL org.opencontainers.image.licenses="MIT"
+
 WORKDIR /app
 
 # Copy package files
