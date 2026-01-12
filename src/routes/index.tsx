@@ -1,7 +1,8 @@
-import { onMount } from "solid-js";
+import { onMount, onCleanup } from "solid-js";
 import { Title } from "@solidjs/meta";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Lenis from "lenis";
 import Section from "../components/Section";
 import CustomCursor from "../components/CustomCursor";
 import Blob from "../components/Blob";
@@ -36,9 +37,25 @@ const SHAPES = {
 
 export default function Home() {
     let containerRef: HTMLDivElement | undefined;
+    let lenis: Lenis | undefined;
 
     onMount(() => {
         if (typeof window === "undefined") return;
+
+        // 初始化 Lenis 平滑滚动
+        lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smoothWheel: true,
+        });
+
+        // 让 GSAP ScrollTrigger 与 Lenis 同步
+        lenis.on("scroll", ScrollTrigger.update);
+
+        gsap.ticker.add((time) => {
+            lenis?.raf(time * 1000);
+        });
+        gsap.ticker.lagSmoothing(0);
 
         const blob1 = document.getElementById("blob-1");
         const stop0 = document.getElementById("heart-stop-0");
@@ -132,6 +149,11 @@ export default function Home() {
                 scrub: 0.5
             }
         });
+    });
+
+    // 清理 Lenis 实例
+    onCleanup(() => {
+        lenis?.destroy();
     });
 
     return (
