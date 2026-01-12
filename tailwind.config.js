@@ -3,6 +3,11 @@ export default {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        marker: ['"Permanent Marker"', 'cursive'],
+        righteous: ['"Righteous"', 'cursive'],
+        roboto: ['"Roboto"', 'sans-serif'],
+      },
       colors: {
         'tech-start': '#a5f3fc',
         'tech-end': '#c4b5fd',

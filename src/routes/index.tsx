@@ -218,14 +218,14 @@ export default function Home() {
 
                 {/* "You" Section - Full page like other sections */}
                 <section id="you" class="min-h-screen w-full flex flex-col justify-center items-center p-8 relative">
-                    <h2 class="text-7xl md:text-8xl font-light tracking-tight text-black/90">You</h2>
+                    <h2 class="text-7xl md:text-8xl font-marker tracking-tight text-black/90">You</h2>
                 </section>
 
                 {/* Footer - Horizontal layout, not a separate section */}
                 <footer class="w-full py-8 px-8 md:px-12 border-t border-neutral-200">
                     <div class="max-w-6xl mx-auto flex items-center justify-between">
-                        <p class="text-xl md:text-2xl font-bold text-black/80">Humanity</p>
-                        <p class="text-lg md:text-xl font-light text-neutral-600">Roxi.dev</p>
+                        <p class="text-xl md:text-2xl font-righteous text-black/80">Humanity</p>
+                        <p class="text-lg md:text-xl font-righteous text-neutral-600">Roxi.dev</p>
                     </div>
                 </footer>
             </div>
