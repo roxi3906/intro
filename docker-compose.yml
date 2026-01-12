@@ -1,12 +1,9 @@
 services:
-  roxi-intro:
+  intro:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+    restart: unless-stopped
     ports:
       - "3001:3000"
-    environment:
-      - NODE_ENV=production
-      - HOST=0.0.0.0
-      - PORT=3000
-    restart: unless-stopped

@@ -17,6 +17,7 @@ const COLORS = {
     resilient: ["#55efc4", "#00b894", "#016a4e"],
     humble: ["#fd79a8", "#e84393", "#833471"],
     hopeful: ["#ffeaa7", "#f39c12", "#d68910"],
+    curious: ["#81ecec", "#00cec9", "#0a6b68"],
     you: ["#a29bfe", "#6c5ce7", "#341f97"]
 };
 
@@ -29,6 +30,7 @@ const SHAPES = {
     resilient: "60% 40% 30% 70% / 70% 30% 40% 60%",  // irregular strength
     humble: "45% 55% 50% 50% / 55% 45% 55% 45%",     // subtle, modest
     hopeful: "35% 65% 55% 45% / 45% 55% 65% 35%",    // upward reaching
+    curious: "55% 45% 40% 60% / 40% 60% 55% 45%",    // exploratory, open
     you: "50% 50% 50% 50% / 50% 50% 50% 50%"         // centered, complete
 };
 
@@ -109,6 +111,11 @@ export default function Home() {
             .to(stop0, { attr: { "stop-color": COLORS.hopeful[0] }, duration: 0.12 }, "<")
             .to(stop1, { attr: { "stop-color": COLORS.hopeful[1] }, duration: 0.12 }, "<")
             .to(stop2, { attr: { "stop-color": COLORS.hopeful[2] }, duration: 0.12 }, "<")
+            // Curious section
+            .to(blob1, { x: vw * 0.48, y: vh * 0.52, scale: 1.08, ease: "sine.inOut", duration: 0.12 })
+            .to(stop0, { attr: { "stop-color": COLORS.curious[0] }, duration: 0.12 }, "<")
+            .to(stop1, { attr: { "stop-color": COLORS.curious[1] }, duration: 0.12 }, "<")
+            .to(stop2, { attr: { "stop-color": COLORS.curious[2] }, duration: 0.12 }, "<")
             // You section
             .to(blob1, { x: vw * 0.5, y: vh * 0.5, scale: 1.4, ease: "sine.inOut", duration: 0.16 })
             .to(stop0, { attr: { "stop-color": COLORS.you[0] }, duration: 0.16 }, "<")
@@ -179,6 +186,12 @@ export default function Home() {
                     <p class="mb-2 text-xl md:text-2xl font-light text-neutral-600">Light</p>
                     <p class="mb-2 text-xl md:text-2xl font-light text-neutral-600">assumed to continue,</p>
                     <p class="text-xl md:text-2xl font-light text-neutral-600">even without proof.</p>
+                </Section>
+
+                <Section id="curious" title="Curious" class="section-item">
+                    <p class="mb-2 text-xl md:text-2xl font-light text-neutral-600">A question</p>
+                    <p class="mb-2 text-xl md:text-2xl font-light text-neutral-600">resting at the edge of the known,</p>
+                    <p class="text-xl md:text-2xl font-light text-neutral-600">waiting to bloom.</p>
                 </Section>
 
                 {/* "You" Section - Full page like other sections */}
