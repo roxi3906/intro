@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <!-- Pixel Heart Icon - Fuller + Light Gradient -->
+  <!-- Row 1 (y=1) - top of lobes -->
+  <rect x="2" y="1" width="2" height="2" fill="#FFE4EC"/>
+  <rect x="4" y="1" width="2" height="2" fill="#FFE4EC"/>
+  <rect x="10" y="1" width="2" height="2" fill="#FFE4EC"/>
+  <rect x="12" y="1" width="2" height="2" fill="#FFE4EC"/>
+  
+  <!-- Row 2 (y=3) - upper lobes -->
+  <rect x="0" y="3" width="2" height="2" fill="#FFD6E3"/>
+  <rect x="2" y="3" width="2" height="2" fill="#FFECF2"/>
+  <rect x="4" y="3" width="2" height="2" fill="#FFF5F8"/>
+  <rect x="6" y="3" width="2" height="2" fill="#FFE4EC"/>
+  <rect x="8" y="3" width="2" height="2" fill="#FFE4EC"/>
+  <rect x="10" y="3" width="2" height="2" fill="#FFF5F8"/>
+  <rect x="12" y="3" width="2" height="2" fill="#FFECF2"/>
+  <rect x="14" y="3" width="2" height="2" fill="#FFD6E3"/>
+  
+  <!-- Row 3 (y=5) - middle upper -->
+  <rect x="0" y="5" width="2" height="2" fill="#FFC8DA"/>
+  <rect x="2" y="5" width="2" height="2" fill="#FFD6E3"/>
+  <rect x="4" y="5" width="2" height="2" fill="#FFE4EC"/>
+  <rect x="6" y="5" width="2" height="2" fill="#FFECF2"/>
+  <rect x="8" y="5" width="2" height="2" fill="#FFECF2"/>
+  <rect x="10" y="5" width="2" height="2" fill="#FFE4EC"/>
+  <rect x="12" y="5" width="2" height="2" fill="#FFD6E3"/>
+  <rect x="14" y="5" width="2" height="2" fill="#FFC8DA"/>
+  
+  <!-- Row 4 (y=7) - middle -->
+  <rect x="1" y="7" width="2" height="2" fill="#FFC8DA"/>
+  <rect x="3" y="7" width="2" height="2" fill="#FFD6E3"/>
+  <rect x="5" y="7" width="2" height="2" fill="#FFE4EC"/>
+  <rect x="7" y="7" width="2" height="2" fill="#FFECF2"/>
+  <rect x="9" y="7" width="2" height="2" fill="#FFE4EC"/>
+  <rect x="11" y="7" width="2" height="2" fill="#FFD6E3"/>
+  <rect x="13" y="7" width="2" height="2" fill="#FFC8DA"/>
+  
+  <!-- Row 5 (y=9) - lower middle -->
+  <rect x="2" y="9" width="2" height="2" fill="#FFBAD0"/>
+  <rect x="4" y="9" width="2" height="2" fill="#FFC8DA"/>
+  <rect x="6" y="9" width="2" height="2" fill="#FFD6E3"/>
+  <rect x="8" y="9" width="2" height="2" fill="#FFD6E3"/>
+  <rect x="10" y="9" width="2" height="2" fill="#FFC8DA"/>
+  <rect x="12" y="9" width="2" height="2" fill="#FFBAD0"/>
+  
+  <!-- Row 6 (y=11) - lower -->
+  <rect x="4" y="11" width="2" height="2" fill="#FFBAD0"/>
+  <rect x="6" y="11" width="2" height="2" fill="#FFC8DA"/>
+  <rect x="8" y="11" width="2" height="2" fill="#FFC8DA"/>
+  <rect x="10" y="11" width="2" height="2" fill="#FFBAD0"/>
+  
+  <!-- Row 7 (y=13) - bottom tip -->
+  <rect x="6" y="13" width="2" height="2" fill="#FFB0C8"/>
+  <rect x="8" y="13" width="2" height="2" fill="#FFB0C8"/>
+</svg>

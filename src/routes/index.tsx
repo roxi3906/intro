@@ -129,7 +129,6 @@ export default function Home() {
 
     return (
         <main ref={containerRef} class="relative min-h-[800vh] bg-white">
-            <Title>Roxi Intro</Title>
 
             <CustomCursor />
 

@@ -9,9 +9,10 @@ export default function App() {
     return (
         <Router root={props => (
             <MetaProvider>
-                <Title>Roxi Intro</Title>
+                <Title>You</Title>
                 <Meta charset="utf-8" />
                 <Meta name="viewport" content="width=device-width, initial-scale=1" />
+                <Link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
                 <Suspense>
                     {props.children}
