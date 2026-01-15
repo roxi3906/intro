@@ -7,7 +7,7 @@ import "./app.css";
 
 export default function App() {
     return (
-        <Router root={props => (
+        <Router base={import.meta.env.BASE_URL} root={props => (
             <MetaProvider>
                 <Title>You</Title>
                 <Meta charset="utf-8" />
